@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar ul {
+  
+  background-color: #be3144;
+  list-style-type: none;
+  text-align: right;
+  /* padding: 0.5rem; */
+}
+
+#navbar li {
+  /* border: solid grey; */
+  display: inline-block;
+  margin-left: -0.3rem;
+  position: relative;
+  right: 3rem;
+
+}
+#navbar li:hover {
+    background-color: #45567d;
+  }
+
+#navbar a {
+  display: block;
+  padding: 1.5rem;
+  text-decoration: none;
+  /* border: dashed 2pt rgb(27, 195, 236); */
+  color: white;
+  font-size: 16pt;
+}
+
+#welcome-section {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(59,59,59,1) 60%);
+  height: 100vh;
+  text-align: center;
+  
+}
+#welcome-section h1, p {
+    position: relative;
+    top: 40%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  #welcome-section p {
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: rgb(158, 37, 37);
+      font-style: italic;
+  }
+  #projects {
+      background-color: #45567d;
+      padding: 2rem;
+  }
+.project-tile {
+  /* border: solid rgb(3, 158, 36); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+#projects h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    text-decoration: underline;
+    padding: 3rem 0 3rem 0;
+    font-family: 'Raleway', sans-serif;
+    text-underline-offset: 1rem;
+  }
+
+.box1 {
+  margin: 2rem;
+  text-align: center;
+}
+.box1 img {
+    width: 400px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.image-link-text {
+background-color: #303841;
+padding: 0.8rem;
+margin-top: -0.4rem;
+
+
+}
+.image-link-text p {
+  padding: 0.7rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: -0.4rem;
+}
+
+.hidden {
+    visibility: hidden;
+    
+}
+
+.box1 a {
+  color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    
+}
+
+.box1 a:hover .hidden {
+    visibility: visible;
+    color: orange;
+}
+.show-all {
+    background-color: #303841;
+    text-align: center;
+    width: 9rem;
+    margin: auto;
+}
+.show-all a {
+    display: block;
+    text-decoration: none;
+    color: white; 
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    
+}
+#profile, footer{
+  background-color: #303841;
+  text-align: center;
+}
+
+#profile h2 {
+  padding-top: 3rem;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#profile p {
+  font-size: 1.3rem;
+  padding: 1rem;
+  font-weight: 300;
+  color: white;
+  font-style: italic;
+}
+.social-links a {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  margin: 0 1.7rem;
+}
+
+.social-links {
+  padding: 2rem;
+ 
+
+}
+.icon {
+  padding-right: 0.4rem;
+
+}
+
+footer {
+  border-top:solid 3pt #be3144;
+  padding: 3rem;
+  
+  
+}
+footer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(219, 219, 219);
+  margin: 2rem;
+  display: inline;
+}
+
+@-webkit-keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+@keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+.social-links a:hover
+{
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  #profile {
+    background-color: rgb(238, 14, 14);
+  }
+}
